@@ -6,8 +6,8 @@ router.get("/", TodosController.getTodos)
 
 router.post("/todo", TodosController.addTodos)
 
-router.put("/todos/:todoId", (req, res) => {})
-
 router.delete("/todos/:todoId", TodosController.deleteTodos)
+
+router.put("/todos/:todoId", (req, res) => {})
 
 module.exports = router;
